@@ -314,7 +314,23 @@
   
 
 
-
+<!-- gitment -->
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'window.location.pathname', // 可选。默认为 location.href
+  owner: 'luolongfei',
+  repo: 'luolongfei.github.io',
+  oauth: {
+    client_id: '2cd60cbb5ee5c4404bba',
+    client_secret: 'cb1a9644ea9af94ea5d041e8c3f8f1d66015d3bb',
+  },
+})
+gitment.render('container')
+</script>
+<!-- end gitment -->
         </div>
         
           
